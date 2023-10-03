@@ -166,6 +166,7 @@ main form input[type="submit"]:hover {
   main{
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
   }
   .filters {
     width: 90%;
@@ -206,6 +207,7 @@ main form input[type="submit"]:hover {
     display: flex;
     cursor: pointer;
     padding: 10px;
+    font-size: 18px;
   }
 
   .filtro_form{
