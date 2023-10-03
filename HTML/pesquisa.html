@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:opsz,wght@5..1200,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../CSS/pesquisa.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <title>Pesquisa</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="../index.html"><img class="cabecalho-imagem" src="../IMAGENS/logo.png"></a>
+        <div class="container">
+          <div class="search">
+            <form action="">
+            <input class="input-header" type="text" placeholder="Pesquisar...">
+            <button class="icon"><ion-icon name="search-outline"></ion-icon></button>
+            </form>
+          </div>
+        </div>
+        <a href=" ../HTML/login.html">
+        <button class="cabecalho-login">
+            <img src="../IMAGENS/login.png">
+            Login
+        </button>
+        </a>
+    </header>
+    <main>
+      <div class="restaurante-container">
+        <div class="grupo-restaurante">
+          <a href="#">
+          <div class="restaurante">
+            <div class="informacoes-restaurante">
+              <h2 class="nome-restaurante">My Fucking Comedy Club</h2>
+              <p class="localizacao">Alameda Santos, 1518 Cérqueira César São Paulo, SP.</p>
+              <p class="avaliacao">Avaliação: 5.0/5</p>
+              <p class="valor">Valor: R$100</p>
+            </div>
+            <div class="imagem-restaurante">
+              <img src="../IMAGENS/MyFuckingComedyClub.jpeg" alt="My Fucking Comedy Club">
+            </div>
+          </div>
+          </a>
+          <a href="#">
+          <div class="restaurante">
+            <div class="informacoes-restaurante">
+              <h2 class="nome-restaurante">CÃO VÉIO | TATUAPÉ</h2>
+              <p class="localizacao">R. Itapura, 1534 – Vila Gomes Cardim, São Paulo – SP.</p>
+              <p class="avaliacao">Avaliação: 3.0/5</p>
+              <p class="valor">Valor: R$200</p>
+            </div>
+            <div class="imagem-restaurante">
+              <img src="../IMAGENS/CaoVeio.jpeg" alt="CÃO VÉIO | TATUAPÉ">
+            </div>
+          </div>
+          </a>
+          <a href="#">
+          <div class="restaurante">
+            <div class="informacoes-restaurante">
+              <h2 class="nome-restaurante">SAL GASTRONOMIA</h2>
+              <p class="localizacao">Av. Magalhães de Castro, 12.000 • São Paulo • SP.</p>
+              <p class="avaliacao">Avaliação: 4.0/5</p>
+              <p class="valor">Valor: R$340</p>
+            </div>
+            <div class="imagem-restaurante">
+              <img src="../IMAGENS/SalGastronomia.jpeg" alt="SAL GASTRONOMIA">
+            </div>
+          </div>
+          </a>
+          <a href="#">
+            <div class="restaurante">
+              <div class="informacoes-restaurante">
+                <h2 class="nome-restaurante">Président</h2>
+                <p class="localizacao">Rua da Consolação, 3527 Jardins, São Paulo, SP.</p>
+                <p class="avaliacao">Avaliação: 3.5/5</p>
+                <p class="valor">Valor: R$120</p>
+              </div>
+              <div class="imagem-restaurante">
+                <img src="../IMAGENS/President.jpeg" alt="Président">
+              </div>
+            </div>
+            </a>
+            <a href="#">
+              <div class="restaurante">
+                <div class="informacoes-restaurante">
+                  <h2 class="nome-restaurante">Ça-va</h2>
+                  <p class="localizacao">Rua Carlos Comenale 277, São Paulo, SP.</p>
+                  <p class="avaliacao">Avaliação: 3.5/5</p>
+                  <p class="valor">Valor: R$516</p>
+                </div>
+                <div class="imagem-restaurante">
+                  <img src="../IMAGENS/ca-va.jpeg" alt="Ça-va">
+                </div>
+              </div>
+              </a>
+        </div>
+      </div>
+
+
+      
+      <div class="filters">
+        <h1 class="h1_aparecido">Filtros</h1>
+        <h1 class="h1_sumido" onclick="toggleFiltroMenu()">Filtros</h1>
+        <form action="#" method="post" class="filtro_form">
+        <div class="range-filter">
+          <label for="min-price">Preço mínimo</label>
+          <input type="text" id="min-price" class="precos" data-max="999999" placeholder="R$10,00"><br>
+          <label for="max-price">Preço máximo</label>
+          <input type="text" id="max-price" class="precos" data-max="999999" placeholder="R$9999,00">
+        </div>
+
+        <div class="select-filter">
+          <label for="restaurant-type">Tipo de restaurante</label>
+          <select id="restaurant-type">
+            <option value="">Todos</option>
+            <option value="a-la-carte">À la carte</option>
+            <option value="self-service">Self-service</option>
+          </select>
+        </div>
+      
+        <div class="select-filter">
+          <label for="cuisine">Tipo de comida</label>
+          <select id="cuisine">
+            <option value="">Todos</option>
+            <option value="brasileira">Brasileira</option>
+            <option value="italiana">Italiana</option>
+            <option value="japonesa">Japonesa</option>
+            <option value="vegetariana">Vegetariana</option>
+            <option value="vegana">Vegana</option>
+          </select>
+        </div>
+
+        <input type="submit" value="Aplicar filtros" id="button" class="apply-filters">
+        </form>
+      </div>
+      
+    </main>
+
+    
+    <footer>
+        <div id="footer_content">
+          <div id="footer_contacts">
+            <img src="../IMAGENS/logo.png" width="150px" height="150px">
+            <h2>Sua Reserva Garantida.</h2>
+          </div>
+          <div id="footer_social_media">
+            <a href="https://instagram.com/chick_space?igshid=MmJiY2I4NDBkZg==" class="footer-link" id="instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100093142992265&mibextid=ZbWKwL" class="footer-link" id="facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/ChickSpaceOFC?t=JHTMYx2q0iq5qXPVzJH7nw&s=09" class="footer-link" id="twitter">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+        <div id="footer_copyright">
+          &#169
+          2023 all rights reserved ChickSpace
+        </div>
+      </footer>
+
+      <script src="../JS/pesquisa.js"></script>
+</body>
+</html>

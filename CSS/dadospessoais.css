@@ -1,0 +1,172 @@
+.dados-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dados-container div {
+    width: 50%;
+}
+
+.texto-tamanho{
+    width: 90%;
+}
+
+.espaco{
+    gap: 1em;
+}
+
+main{
+    background-image: url(../IMAGENS/teste.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+main form label span {
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+main form label {
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    text-align: center;
+    padding: 20px;
+    font-size: 32px;
+    margin-top: 0;
+    
+ }
+
+.containe {
+    width: 90%;
+    margin: 0 auto;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    border: 1px solid #000000;
+    box-shadow: 0 0 20px 0 #000000;
+    border-radius: 10px;
+}
+  
+nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+  
+nav ul {
+    margin: 0 0 20px 0;
+}
+  
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+  
+nav a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    background-color: transparent;
+    border-radius: 4px;
+    transition: all 0.5s;
+    border: #000 solid 1px;
+}
+  
+nav a:hover {
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #000;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    display: block;
+    width: 95%;
+    margin: 5px 0;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    background-color: transparent;
+    color: #000;
+}
+
+::placeholder {
+    color: #000;
+    opacity: 1;
+  }
+
+input:focus {
+    border-color: #000;
+    outline: none;
+} 
+  
+.dados-pessoais {
+    background-color: transparent;
+    padding: 20px;
+}
+
+span{
+    font-size: 1.1rem;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+main form input[type="submit"] {
+    cursor: pointer;
+    width: 25%;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 32px;
+    background: #000000;
+    color: #ffffff;
+    border: 1px solid #000000;
+    font-size: 1.1rem;
+    transition: all .3s ease-in-out;
+    margin-bottom: 30px;
+    align-self: center;
+}
+
+main form input[type="submit"]:hover {
+    background: transparent;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+@media only screen and (max-width: 600px) {
+    .dados-container{
+        flex-direction: column;
+    }
+    .dados-container div{
+        width: 100%;
+    }
+    nav ul li {
+        margin: 10px;
+    }
+    .texto-tamanho{
+        width: 100%;
+    }
+    .buttons{
+        flex-direction: column;
+    }
+    main form input[type="submit"] {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+}
